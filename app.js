@@ -1,6 +1,23 @@
 //key: cf01003f0befec9da6daa3fc1d540d35
 // api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 
+// const searchBoxKey=eventValue=>{
+//     console.log(eventValue.keyCode);
+    // if (eventValue.keyCode==='Enter') {
+    // getWeatherInput();
+            
+    // }
+// }
+document.getElementById("weatherLocation").addEventListener("keydown",function(event){
+    
+    //let eventCode=event.key;
+console.log(event.key)
+if (event.key==='Enter') {
+    event.preventDefault();
+    getWeatherInput();
+            
+    }
+})
 
 const getWeatherInput = () => {
     const apiKey = `cf01003f0befec9da6daa3fc1d540d35`
